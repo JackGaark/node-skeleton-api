@@ -33,3 +33,6 @@ yarn dev # to launch server on the specified port in the .env file at root
 ```
 yarn test
 ```
+```
+[![Run on Repl.it](https://repl.it/badge/github/JackGaark/node-skeleton-api)](https://repl.it/github/JackGaark/node-skeleton-api)
+```
