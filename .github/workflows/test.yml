@@ -1,0 +1,22 @@
+name: CI/CD
+
+on:
+  push:
+    branches-ignore:
+      - master
+
+env:
+  API_KEY: testApiKey
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+      - run: yarn
+      - run: yarn build
+      - run: yarn test
